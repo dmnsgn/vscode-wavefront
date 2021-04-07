@@ -1,0 +1,99 @@
+# Comment line
+
+# General statements
+call filename.ext $1 arg1 arg2 \
+	$2 arg3
+
+
+csh command
+
+csh -noerror
+
+
+# Vertex data
+v   20.0  -20.00  200.0 20
+vp  26.4   82.29  2124.2
+vn  0.00  0.00  1.00
+vt  1.20  5.20  4.19
+
+
+# Groups
+g name       # Group names
+g g1 g2 g3
+s 2 -2.2     # Smoothing group
+mg 1 0.555   # Merging group
+o custom     # User-defined object statement
+
+
+# Display/render attributes
+bevel on
+bevel off
+bevel nah
+
+c_interp on
+c_interp off
+c_interp nah
+
+d_interp on
+d_interp off
+d_interp nah
+
+lod 2
+
+maplib file1 file2
+usemap mapname ignored
+usemtl matname
+mtllib file file2 file3
+shadow_obj filename
+trace_obj filename
+
+ctech cparm 2
+ctech cspace 3
+ctech curv 2 2
+
+stech cparma 1 1
+stech cparmb 1 0
+stech cspace 1 0
+stech curv   1 1
+
+
+# Complete example taken from spec
+mtllib master.mtl
+
+v 0.000000 2.000000 2.000000
+v 0.000000 0.000000 2.000000
+v 2.000000 0.000000 2.000000
+v 2.000000 2.000000 2.000000
+v 0.000000 2.000000 0.000000
+v 0.000000 0.000000 0.000000
+v 2.000000 0.000000 0.000000
+v 2.000000 2.000000 0.000000
+# 8 vertices
+
+g front
+usemtl red
+f 1 2 3 4
+g back
+usemtl blue
+f 8 7 6 5
+g right
+usemtl green
+f 4 3 7 8
+g top
+usemtl gold
+f 5 1 4 8
+g left
+usemtl orange
+f 5 6 2 1
+g bottom
+usemtl purple
+f 2 6 7 3
+# 6 elements
+
+
+# Superseded statements
+bsp 1 2 3 4 5 6 7 8 9 10 11 12 13 14 text     # B-spline patch
+bzp 1 2 3 4 5 6 7 8 9 10 11 12 13 14 text     # Bezier patch
+cdc 1 2 4 5 6                                 # Cardinal curve
+cdp 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # Cardinal patch
+res 2 4                                       # Segment resolution

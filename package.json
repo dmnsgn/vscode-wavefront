@@ -1,0 +1,76 @@
+{
+  "name": "vscode-wavefront",
+  "displayName": "Wavefront",
+  "version": "1.0.0",
+  "description": "Grammars for Wavefront .obj and .mtl files.",
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "keywords": [
+    "vs-code",
+    "vs-code-language",
+    "vs-code-grammar",
+    "wavefront",
+    "wavefront-obj",
+    "wavefront-mtl"
+  ],
+  "homepage": "https://github.com/dmnsgn/vscode-wavefront",
+  "bugs": "https://github.com/dmnsgn/vscode-wavefront/issues",
+  "repository": "dmnsgn/vscode-wavefront",
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://paypal.me/dmnsgn"
+    },
+    {
+      "type": "individual",
+      "url": "https://commerce.coinbase.com/checkout/56cbdf28-e323-48d8-9c98-7019e72c97f3"
+    }
+  ],
+  "license": "MIT",
+  "author": "Damien Seguin (https://github.com/dmnsgn)",
+  "contributes": {
+    "grammars": [
+      {
+        "language": "wavefront-mtl",
+        "scopeName": "source.wavefront.mtl",
+        "path": "./syntaxes/wavefront.mtl.tmLanguage.json"
+      },
+      {
+        "language": "wavefront-obj",
+        "scopeName": "source.wavefront.obj",
+        "path": "./syntaxes/wavefront.obj.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "wavefront-obj",
+        "aliases": [
+          "Wavefront (OBJ)",
+          "wavefront (OBJ)"
+        ],
+        "extensions": [
+          ".obj"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "wavefront-mtl",
+        "aliases": [
+          "Wavefront (MTL)",
+          "wavefront (MTL)"
+        ],
+        "extensions": [
+          ".mtl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "engines": {
+    "node": ">=15.0.0",
+    "npm": ">=7.0.0",
+    "vscode": "^1.55.0"
+  }
+}

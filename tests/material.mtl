@@ -1,0 +1,172 @@
+# Comment line
+newmtl my_mtl
+
+# Material colour and illumination statements
+Ka 0.0435
+Ka 0.0435 0.0435 0.0435
+Ka spectral file.rfl
+Ka spectral file.rfl 2
+Ka xyz 1
+Ka xyz 1 2 3
+
+Kd 2
+Kd 0.1086 0.1086 0.1086
+Kd spectral file.rfl
+Kd spectral file.rfl 3
+Kd xyz 1
+Kd xyz 1 2 3
+
+Ks 0.0000
+Ks 0.0000 0.0000 0.0000
+Ks spectral file.rfl
+Ks spectral file.rfl 0.5
+Ks xyz 2
+Ks xyz 1 2 3
+
+Ke 0.0000
+Ke 0.0000 0.0000 0.0000
+Ke spectral file.rfl
+Ke spectral file.rfl 0.5
+Ke xyz 2
+Ke xyz 1 2 3
+
+Tf 2
+Tf 0.1086 0.1086 0.1086
+Tf spectral file.rfl
+Tf spectral file.rfl 3
+Tf xyz 1
+Tf xyz 1 2 3
+
+Tr 0.0000
+Tf 0.9885 0.9885 0.9885
+illum 6
+d -halo 0.6600
+Ns 10.0000
+sharpness 60
+Ni 1.19713
+
+
+# Texture map statements
+map_Ka -s 1 1 1 -o 0 0 0 -mm 0 1 chrome.mpc
+map_Kd -s 1 1 1 -o 0 0 0 -mm 0 1 chrome.mpc
+map_Ks -s 1 1 1 -o 0 0 0 -mm 0 1 chrome.mpc
+map_Ke -s 1 1 1 -o 0 0 0 -mm 0 1 chrome.mpc
+map_Ns -s 1 1 1 -o 0 0 0 -mm 0 1 wisp.mps
+map_d -s 1 1 1 -o 0 0 0 -mm 0 1 wisp.mps
+map_aat on
+disp -s 1 1 .5 wisp.mps
+decal -s 1 1 1 -o 0 0 0 -mm 0 1 sand.mps
+bump -s 1 1 1 -o 0 0 0 -bm 1 sand.mpb
+
+# Reflection map statement
+refl -type sphere -mm 0 1 clouds.mpc
+
+# Other map statements (3DS Max)
+map_bump path/to/file
+map_refl path/to/file
+
+
+# Texture map statements (Flipped)
+map_Ka chrome.mpc -s 1 1 1 -o 0 0 0 -mm 0 1
+map_Kd chrome.mpc -s 1 1 1 -o 0 0 0 -mm 0 1
+map_Ks chrome.mpc -s 1 1 1 -o 0 0 0 -mm 0 1
+map_Ke chrome.mpc -s 1 1 1 -o 0 0 0 -mm 0 1
+map_Ns wisp.mps -s 1 1 1 -o 0 0 0 -mm 0 1
+map_d wisp.mps -s 1 1 1 -o 0 0 0 -mm 0 1
+disp wisp.mps -s 1 1 .5
+decal sand.mps -s 1 1 1 -o 0 0 0 -mm 0 1
+bump sand.mpb -s 1 1 1 -o 0 0 0 -bm 1
+
+
+# Flat green
+newmtl flat_green
+Ka 0.0000 1.0000 0.0000
+Kd 0.0000 1.0000 0.0000
+illum 1
+
+# Dissolved green
+newmtl diss_green
+Ka 0.0000 1.0000 0.0000
+Kd 0.0000 1.0000 0.0000
+d 0.8000
+illum 1
+
+# Shiny green
+newmtl shiny_green
+Ka 0.0000 1.0000 0.0000
+Kd 0.0000 1.0000 0.0000
+Ks 1.0000 1.0000 1.0000
+Ns 200.0000
+illum 1
+
+# Green mirror
+newmtl green_mirror
+Ka 0.0000 1.0000 0.0000
+Kd 0.0000 1.0000 0.0000
+Ks 0.0000 1.0000 0.0000
+Ns 200.0000
+illum 3
+
+# Fake windshield
+newmtl fake_windsh
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 0.0000
+Ks 0.9000 0.9000 0.9000
+d 0.1000
+Ns 200
+illum 4
+
+# Fresnel blue
+newmtl fresnel_blu
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 0.0000
+Ks 0.6180 0.8760 0.1430
+Ns 200
+illum 5
+
+# Real windshield
+newmtl real_windsh
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 0.0000
+Ks 0.0000 0.0000 0.0000
+Tf 1.0000 1.0000 1.0000
+Ns 200
+Ni 1.2000
+illum 6
+
+# Fresnel windshield
+newmtl fresnel_win
+Ka 0.0000 0.0000 1.0000
+Kd 0.0000 0.0000 1.0000
+Ks 0.6180 0.8760 0.1430
+Tf 1.0000 1.0000 1.0000
+Ns 200
+Ni 1.2000
+illum 7
+
+# Tin
+newmtl tin
+Ka spectral tin.rfl
+Kd spectral tin.rfl
+Ks spectral tin.rfl
+Ns 200
+illum 3
+
+# Pine wood
+newmtl pine_wood
+Ka spectral ident.rfl 1
+Kd spectral ident.rfl 1
+illum 1
+map_Ka pine.mpc
+map_Kd pine.mpc
+
+# Bumpy leather
+newmtl bumpy_leath
+Ka spectral ident.rfl 1
+Kd spectral ident.rfl 1
+Ks spectral ident.rfl 1
+illum 2
+map_Ka brown.mpc
+map_Kd brown.mpc
+map_Ks brown.mpc
+bump -bm 2.000 leath.mpb

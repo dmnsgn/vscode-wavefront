@@ -1,0 +1,17 @@
+# Points
+p  2  4  6  8  # Absolute
+p -2 -4 -6 -8  # Relative
+
+# Lines
+l  -2/2 5/-2 2 2/2
+
+# Faces
+f 2/-2/2
+fo 2/-2/2
+f -2/-2/-1
+
+
+# 2D Curve
+curv2 46 120 242
+
+surf 1 2 3 4 2/2/2
