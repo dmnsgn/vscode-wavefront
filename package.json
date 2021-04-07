@@ -1,6 +1,7 @@
 {
   "name": "vscode-wavefront",
   "displayName": "Wavefront",
+  "publisher": "dmnsgn",
   "version": "1.0.0",
   "description": "Grammars for Wavefront .obj and .mtl files.",
   "categories": [
