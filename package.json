@@ -1,13 +1,11 @@
 {
   "name": "vscode-wavefront",
   "displayName": "Wavefront",
-  "publisher": "dmnsgn",
   "version": "1.0.0",
   "description": "Grammars for Wavefront .obj and .mtl files.",
   "categories": [
     "Programming Languages"
   ],
-  "icon": "icon.png",
   "keywords": [
     "vs-code",
     "vs-code-language",
@@ -31,6 +29,7 @@
   ],
   "license": "MIT",
   "author": "Damien Seguin (https://github.com/dmnsgn)",
+  "publisher": "dmnsgn",
   "contributes": {
     "grammars": [
       {
@@ -73,5 +72,10 @@
     "node": ">=15.0.0",
     "npm": ">=7.0.0",
     "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "snowdev": {
+    "docs": false,
+    "types": false
   }
 }
