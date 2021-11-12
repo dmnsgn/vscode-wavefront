@@ -2,8 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/vscode-wavefront)](https://www.npmjs.com/package/vscode-wavefront)
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://www.npmjs.com/package/vscode-wavefront)
-[![npm minzipped size](https://img.shields.io/bundlephobia/minzip/vscode-wavefront)](https://www.npmjs.com/package/vscode-wavefront)
-[![dependencies](https://img.shields.io/david/dmnsgn/vscode-wavefront)](https://github.com/dmnsgn/vscode-wavefront/blob/main/package.json)
+[![npm minzipped size](https://img.shields.io/bundlephobia/minzip/vscode-wavefront)](https://bundlephobia.com/package/vscode-wavefront)
+[![dependencies](https://img.shields.io/librariesio/release/npm/vscode-wavefront)](https://github.com/dmnsgn/vscode-wavefront/blob/main/package.json)
 [![types](https://img.shields.io/npm/types/vscode-wavefront)](https://github.com/microsoft/TypeScript)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-fa6673.svg)](https://conventionalcommits.org)
 [![styled with prettier](https://img.shields.io/badge/styled_with-Prettier-f8bc45.svg?logo=prettier)](https://github.com/prettier/prettier)
